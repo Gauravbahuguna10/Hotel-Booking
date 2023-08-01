@@ -1,0 +1,34 @@
+<!-- 
+<div class="search-result">
+    Search Result Based on City
+
+</div>
+<div class="search-results">
+    <div class="search-result" *ngFor="let h of hotel; let i = index" (click)="viewDetails(h.id)">
+        
+           
+      <h3 class="name">{{ h.hotelName }}</h3>
+      <p class="address">{{ h.hotelAddress }}, {{ h.city }}</p>
+      <p class="description">{{ h.hotelDescription }}</p>
+      <p class="optional">{{ h.id }}</p>
+      <button class="btn btn-primary">View</button>
+    </div>
+  </div> -->
+
+<div class="hotel-list">
+  <div class="hotel-item" *ngFor="let h of hotel; let i = index">
+    <div class="container">
+      <div class="wrapper">
+        <img class="modal-content" src="..\assets\hotelImages\image (3).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (4).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (5).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (6).jpg" alt="">
+      </div>
+    </div>
+    <h3>{{ h.hotelName }}</h3>
+    <p>{{ h.hotelAddress }}</p>
+    <p>{{ h.hotelDescription }}</p>
+    <!-- <p>Hotel ID: {{ h.id }}</p> -->
+    <button (click)="viewDetails(h)">View</button>
+  </div>
+</div>

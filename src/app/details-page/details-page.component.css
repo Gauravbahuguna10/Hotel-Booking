@@ -1,0 +1,143 @@
+.hotel-details {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  width: 780px;
+  height: 1180px;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: 18%;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.det {
+  display: flex;
+}
+
+.hotel-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hotel-details p {
+  margin-bottom: 10px;
+}
+
+.hotel-details strong {
+  font-weight: bold;
+}
+
+/* Additional styling for visual appeal */
+.hotel-details {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-details p {
+  color: #333;
+}
+
+.booking-form { 
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 350px;
+  margin-left: 40px;
+  /* margin-top: 25px; */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.booking-form label,
+.booking-form input,
+.booking-form select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.booking-form .form-group label {
+  font-weight: bold;
+}
+
+.booking-form .proceed-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-form .proceed-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for visual appeal */
+.booking-form {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form label {
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  top: 50%;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper {
+  width: 110%;
+  display: flex;
+  margin-left: -20px;
+  animation: slide 8s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translate(-100%);
+  }
+
+  50% {
+    transform: translate(-100%);
+  }
+
+  55% {
+    transform: translate(-200%);
+  }
+
+  75% {
+    transform: translate(-200%);
+  }
+
+  80% {
+    transform: translate(-300%);
+  }
+
+  100% {
+    transform: translate(-300%);
+  }
+}
+
+img {
+  width: 100%;
+}

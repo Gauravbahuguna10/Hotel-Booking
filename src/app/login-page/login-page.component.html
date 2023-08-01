@@ -1,0 +1,32 @@
+<div class="booking-image"></div>
+
+<div class="login-overlay">
+  <div class="login-form">
+    <form (ngSubmit)="authenticate()" class="was-validated">
+
+      <fieldset>
+        <legend>Login</legend>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="cred.email" class="form-control" required>
+          <div class="invalid-feedback">
+            Please provide a valid email.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="cred.password" class="form-control" required>
+          <div class="invalid-feedback">
+            Please enter your password.
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </fieldset>
+    </form>
+
+    <p>Don't have an account? <a [routerLink]="['/register-page']">Register</a></p>
+  </div>
+</div>

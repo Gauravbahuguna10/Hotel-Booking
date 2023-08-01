@@ -1,0 +1,37 @@
+<div class="wrapper">
+
+    <div class="cover">
+        <img src="../../assets/images/coverpage.jpg" alt="" srcset="">
+    </div>
+</div>
+    <div class="search">
+        <div class="head">
+            
+            <h1> Book Your Hotel</h1>
+            <h5>Lets get Acquainted!</h5>
+            <p>A hotel reservation system is software used in the hotel industry to manage room inventory, rates, and bookings.online booking engine that allows guests to make secure online reservations through hotel website and helps hotels to accept bookings and collect payments online</p>
+
+            <div class="image-stack">
+                <img src="../../assets/images/image1.jpg" alt="" srcset="">
+                <img src="../../assets/images/image2.jpg" alt="" srcset="">
+                <img src="../../assets/images/image3.jpg" alt="" srcset="">
+              </div>
+        </div>
+       
+
+            <form (ngSubmit)="search()" class="search">
+                
+                
+                    
+                    <select name="city" [(ngModel)]="city" required (click)="toggleDropdown()"> 
+                        <option value="" disabled selected>Select your city</option>
+                        <option *ngFor="let c of cities" [value]="c">{{c}}</option>
+                    </select>&nbsp;
+               
+                <button type="submit" class="btn btn-primary" (click)="search()" >Search</button>
+                
+            </form>
+            
+            
+     
+    </div>

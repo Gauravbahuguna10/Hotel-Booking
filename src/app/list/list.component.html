@@ -1,0 +1,22 @@
+<p>list works!</p>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+        <th>City</th><th>HotelName</th><th>Location</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let h of hotel">
+            <td>{{h.city}}</td>
+            <td>{{h.hotelName}}</td>
+            <td>{{h.hotelAddress}}</td>
+            <!-- <td><button class="btn btn-danger" (click)="delete(p.id)">Delete</button></td> -->
+            <!-- <td><button class="btn btn-info" (click)="edit(i)">Edit</button></td> -->
+            <!-- <td> ng-src="{{p.photo}}</td> -->
+
+        </tr>
+    </tbody>
+
+</table>

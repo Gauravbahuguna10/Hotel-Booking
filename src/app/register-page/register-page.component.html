@@ -1,0 +1,44 @@
+<div class="booking-image">
+    <div class="slideshow-container">
+      <div class="slide fade" style="background-image: url('../../assets/images/image1.jpg');"></div>
+      <!-- Add more slides with different images -->
+    </div>
+  </div>
+  
+  <div class="login-overlay">
+    <form (ngSubmit)="save()" class="was-validated login-form" #addf="ngForm">
+      <fieldset>
+        <legend>Register</legend>
+  
+        <div class="basic">
+
+          <!-- <label for="name">Name</label> -->
+          <input name="name" class="form-control" placeholder="Name" [(ngModel)]="customer.customerName" required>
+          
+          <!-- <label for="mobile">Mobile</label> -->
+          <input name="mobile" class="form-control" placeholder="Mobile number" [(ngModel)]="customer.mobile" type="number" required>
+        
+  
+        </div>
+       
+
+          <!-- <label for="email" class="email">Email:</label> -->
+          <input class="form-control" name="email" placeholder="Email" [(ngModel)]="customer.email" type="email" required>
+          
+          <!-- <label for="password" class="pass">Password:</label> -->
+          <input class="form-control" name="password" placeholder="Password" [(ngModel)]="customer.password" type="password" required>
+          
+        <br>
+        <button type="submit" class="btn btn-primary" [disabled]="!addf.valid">Save</button>
+        
+      </fieldset>
+     <p> Registered ? Then  <a [routerLink]="['/login-page']">Login</a> </p>
+      
+    </form>
+    
+  </div>
+  
+  
+  
+ 
+  

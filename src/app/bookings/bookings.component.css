@@ -1,0 +1,38 @@
+.box{
+    box-shadow: 0px 2px 10px 0px rgb(137, 137, 137);
+    padding: 10px;
+     margin: 20px;
+     border-radius: 10px;
+     transition: all 0.6s ease;
+     width: 60%;
+     margin-left:20% ;
+}
+.box:hover{
+    scale: 1.02;
+
+}
+ul{
+    list-style: none;
+}
+*{
+    background-image: url('../../assets/images/cool-background.png');
+}
+.bookings{
+     margin-top:20px; 
+     border-radius: 15px 15px 0px 0px;
+}
+.btn{
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px 0px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+transform: scaleX(1.03);
+}
+button{
+    color: black;
+}
+.dates{
+    display: inline-flex;
+}

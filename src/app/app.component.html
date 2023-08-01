@@ -1,0 +1,31 @@
+
+<div class="nav">
+    <a [routerLink]="['/home']" class="logo">
+        <img src="../assets/images/Dragonfly_Inn_-removebg-preview.png" alt="Logo"> Dragonfly_Inn
+    </a>&nbsp;
+
+    <!-- <a [routerLink]="['/home']" class="home">Home</a>&nbsp; -->
+    <!-- <a [routerLink]=""></a> -->
+    <a [routerLink]="['/bookings']" class="bookings" >Bookings</a>&nbsp;
+    <div class="right">
+
+        <a class="login" [routerLink]="['/login-page']">
+            <img src="../assets/images/account.png" alt="login" class="log">
+            Login</a>
+            <a (click)="logout()">Logout</a>
+        </div>
+        <!-- <button  (click)="logout()">Logout</button> -->
+
+</div>
+
+
+
+
+
+<!-- <div>
+    <img src="../assets/images/coverpage.jpg" alt="" srcset="">
+</div> -->
+
+
+ 
+<router-outlet></router-outlet>

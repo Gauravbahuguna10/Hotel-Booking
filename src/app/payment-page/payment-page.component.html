@@ -1,0 +1,37 @@
+<h2>Card Details</h2>
+
+<div class="credit-card">
+
+   <form (ngSubmit)="pay()" #kk="ngForm">
+
+    <h4>VISA</h4>
+
+     <div class="number">
+
+        <input type="number" max="16" name="cardNumber"  placeholder="Card Number">
+
+     </div>
+
+     <div class="good-through-value">
+
+       <input type="number" name="cvv" placeholder="CVV"  maxlength=3 pattern="[0-9]{3}">  
+
+       <input type="date" placeholder="exp Date" >
+
+     </div>
+
+     <div class="holder">
+
+       <input type="text" name="name" placeholder="Name on Card"  >
+
+     </div>
+
+     <div class="validity">
+
+     <button type="submit" (onclik)="pay()" [disabled]="!kk.valid">Pay</button>
+
+    </div>
+
+   </form>
+
+ </div>

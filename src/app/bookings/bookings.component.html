@@ -1,0 +1,24 @@
+
+<div class="bookings" >
+    <h2>{{ customer.customerName }}'s Bookings</h2>
+    <ul>
+      <!-- Loop through the bookings and display the necessary information -->
+      <li *ngFor="let booking of customer.booking" class="box" >
+        <p>Hotel Name: {{ booking.hotelName }}</p>
+        <div >
+          <p>Room Type: {{ booking.roomType }}</p>
+          <p> Price: {{booking.price | currency:'INR'}}</p>
+        </div>
+        <div class="dates">
+          <p>Check-in : {{ booking.checkIn }}</p> &nbsp;
+          <p>Check-out : {{ booking.checkOut }}</p>
+
+        </div>
+        <br>
+        <button class="btn" (click)="invoice()">Invoice</button>
+      </li>
+    </ul>
+  </div>
+  
+
+

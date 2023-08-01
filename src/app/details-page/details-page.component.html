@@ -1,0 +1,55 @@
+<div class="main">
+  <div class="hotel-details">
+    <div class="container">
+      <div class="wrapper">
+        <img class="modal-content" src="..\assets\hotelImages\image (3).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (4).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (5).jpg" alt="">
+        <img class="modal-content" src="..\assets\hotelImages\image (6).jpg" alt="">
+      </div>
+    </div>
+    <div class="det">
+      <div>
+        <h2>Hotel Details</h2>
+        <p><strong>Hotel Name:</strong> {{ hotel.hotelName }}</p>
+        <p><strong>Hotel Description:</strong> {{ hotel.hotelDescription }}</p>
+        <p><strong>Address:</strong> {{ hotel.hotelAddress }}</p>
+        
+        <!-- <p><strong>Hotel ID:</strong> {{ hotel.id }}</p> -->
+      </div>
+      <div class="booking-form">
+        <h2>Booking Details</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="checkIn">Check-in:</label>
+            <input type="text" placeholder="dd/mm/yyyy" name="checkIn" [(ngModel)]="booking.checkIn" id="checkIn">
+          </div>
+          <div class="form-group">
+            <label for="checkOut">Check-Out</label>
+            <input type="text" placeholder="dd/mm/yyyy" name="checkOut" [(ngModel)]="booking.checkOut" id="checkOut">
+          </div>
+          <div class="form-group">
+            <label for="guest">Guest</label>
+            <input type="number" name="guest" [(ngModel)]="booking.guest" id="guest">
+          </div>
+          <div class="form-group">
+            <label for="roomType">RoomType</label>
+            <select name="roomType" (click)="calculatePriceAndFinalPrice()" [(ngModel)]="booking.roomType" id="roomType">
+              <option [ngValue]="null" disabled>Choose your Room</option>
+              <option *ngFor="let r of roomtype" [ngValue]="r">{{r}}</option>
+            </select>
+          </div>
+          <!-- To calculate the price -->
+          <div *ngIf="priceWithoutGst !== undefined">
+            <p>Price:{{priceWithoutGst | currency : 'INR'}}</p>
+            <p>+GST 18% :</p>
+            <p>Final Price : {{finalPrice | currency :'INR'}}</p>
+          </div>
+          <button class="proceed-button" (click)="navigate()">Proceed</button>
+        </form>
+      </div>
+    </div>
+  </div> <br>
+  <!-- details  -->
+</div>
+

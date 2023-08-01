@@ -1,0 +1,96 @@
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center; /* Centers the items horizontally */
+  gap: 20px; /* Adds spacing between items */
+  width: 40%;
+}
+
+.hotel-item {
+  width: 700px;
+  padding: 20px;
+  margin-bottom: 20px; /* Adds space at the bottom of each item */
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.hotel-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hotel-item p {
+  margin-bottom: 10px;
+}
+
+.hotel-item button {
+  display: block; /* Centers the button horizontally */
+  margin-top: 10px; /* Adds spacing between text and button */
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hotel-item button:hover {
+  background-color: #0056b3;
+}
+img{
+  border-radius:15px ;
+}
+.container{
+  width:100% ;
+  top: 50%;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  /* transition: all 0.6s ease; */
+  overflow: hidden;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+.wrapper{
+  width: 110%;
+  display: flex;
+  margin-left: -20px;
+  animation: slide 8s infinite;
+}
+@keyframes slide{
+  0%{
+    transform: translate(0);
+  }
+  25%{
+    transform: translate(0);
+  }
+  30%{
+    transform: translate(-100%);
+  }
+  50%{
+    transform: translate(-100%);
+  }
+  55%{
+    transform: translate(-200%);
+  }
+  75%{
+    transform: translate(-200%);
+  }
+  80%{
+    transform: translate(-300%);
+  }
+  100%{
+    transform: translate(-300%);
+  }
+}
+img{
+  width: 100%;
+}
+.modal-content{
+  transition: all 0.6s ease;
+}
+.modal-content:hover{
+  scale:(1.04)
+}
