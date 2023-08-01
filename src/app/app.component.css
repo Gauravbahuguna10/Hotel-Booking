@@ -1,0 +1,38 @@
+.nav{
+    box-shadow: 0px 2px 10px 0px ;
+    border-radius: 0px 0px 12px 12px;
+    padding: 20px;
+    
+    
+
+}
+.logo{
+    width: 8%;
+    height: 1%;
+}
+.right{
+    margin-top: -25px;
+    margin-left: 960px;
+    display: flex;
+}
+a{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:40px ;
+    font-style: none;
+    color: black;
+    transform: displa;
+    text-decoration: none;
+}
+
+
+
+img{
+width: 50%;
+
+}
+
+.login{
+    width: 30%;
+    height: 90%;
+}

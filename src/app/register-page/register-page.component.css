@@ -1,0 +1,116 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  .basic{
+    display: flex;
+  }
+  /* Add custom styles to the login/signup form and booking image */
+  .booking-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 80%;
+    transform: translate(-33%, -44%);
+    border-radius: 17px;
+    background-image: url('../../assets/images/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+  }
+  
+  .login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.6 ease;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 140px;
+  }
+ 
+  
+.login-form:hover{
+  height: 59%;
+}
+
+  .login-form {
+    width: 43%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: height 0.6s ease;
+    height: 49%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+ 
+  
+  .login-form fieldset {
+    padding: 10px;
+  }
+  
+  .login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Style the invalid feedback messages */
+  .login-form .invalid-feedback {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Style the "Save" button */
+  .login-form .btn-primary {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-form .btn-primary:hover {
+    background-color: #000000;
+  }
+  
+  /* Style the "Login" link */
+  p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  .pass{
+    margin-left: 10%;
+  }
+  

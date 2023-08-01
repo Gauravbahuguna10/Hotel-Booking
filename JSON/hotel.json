@@ -1,0 +1,157 @@
+{
+  "hotel": [
+    {
+      "id": 1,
+      "hotelName": "Holiday Inn",
+      "hotelAddress": "Civil Lines",
+      "hotelDescription": "Lavish bathrooms with upscale features such as heated floors and soaking tubs. High-end, lush linens and towels. Deluxe pillows and mattresses so your sleeping hours are as blissful as your waking ones. Beautiful views in every direction – inside and out.",
+      "city": "Pune",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "hotelName": "Alchemy Suites",
+      "hotelDescription": "Elegant guest rooms, designed in warm beige tones and tailored to the needs of private and business travelers alike. All rooms have a large marble bathroom, a double bed, an additional work area with free internet access and a walk-in closet. Also, different types of rooms available like deluxe, ac and non ac rooms.",
+      "hotelAddress": "Koramangala",
+      "city": "Bangalore",
+      "img": ""
+    }
+  ],
+  "customer": [
+    {
+      "id": 101,
+      "customerName": "Kajal",
+      "mobile": 9748736258,
+      "email": "kajal@gmail.com",
+      "password": "kajal123",
+      "booking": [
+        {
+          "bookingId": 201,
+          "hotelName": "Holiday Inn",
+          "roomType": "Delux",
+          "guest": 4,
+          "price": 28320,
+          "checkIn": "28/06/2023",
+          "checkOut": "30/06/2023"
+        },
+        {
+          "bookingId": 202,
+          "hotelName": "Holiday Inn",
+          "roomType": "Delux",
+          "guest": 2,
+          "price": 14160,
+          "checkIn": "28/06/2023",
+          "checkOut": "30/06/2023"
+        },
+        {
+          "bookingId": 210,
+          "hotelName": "Alchemy Suites",
+          "roomType": "A/C",
+          "guest": 1,
+          "price": 4720,
+          "checkIn": "04/09/2023",
+          "checkOut": "05/09/2023"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "customerName": "Gaurav",
+      "mobile": 9848736254,
+      "email": "gaurav@gmail.com",
+      "password": "gaurav123",
+      "booking": [
+        {
+          "bookingId": 203,
+          "guest": 1,
+          "hotelName": "Alchemy Suites",
+          "roomType": "Delux",
+          "checkIn": "02/07/2023",
+          "checkOut": "12/07/2023",
+          "price": 13000
+        },
+        {
+          "bookingId": 204,
+          "hotelName": "Alchemy Suites",
+          "guest": 2,
+          "roomType": "Delux",
+          "checkIn": "02/07/2023",
+          "checkOut": "12/07/2023",
+          "price": 12000
+        },
+        {
+          "bookingId": 206,
+          "hotelName": "Holiday Inn",
+          "roomType": "A/C",
+          "guest": 4,
+          "price": 18880,
+          "checkIn": "28/06/2023",
+          "checkOut": "30/06/2023"
+        },
+        {
+          "bookingId": 207,
+          "hotelName": "Holiday Inn",
+          "roomType": "A/C",
+          "guest": 4,
+          "price": 18880,
+          "checkIn": "28/06/2023",
+          "checkOut": "30/06/2023"
+        },
+        {
+          "bookingId": 209,
+          "hotelName": "Holiday Inn",
+          "roomType": "Delux",
+          "guest": 2,
+          "price": 21240,
+          "checkIn": "04/08/2023",
+          "checkOut": "07/08/2023"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "customerName": "sajal srhivastav",
+      "mobile": 9878786756,
+      "email": "sajal@gmail.com",
+      "password": "qwerty",
+      "booking": [
+        {
+          "bookingId": 205,
+          "hotelName": "",
+          "roomType": "Delux",
+          "guest": 7,
+          "price": 0,
+          "checkIn": "28-06-2023",
+          "checkOut": "30-06-2023"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "customerName": "xyz",
+      "mobile": 9090909090,
+      "email": "xyz@gmail.com",
+      "password": "xyz",
+      "booking": [
+        {
+          "bookingId": 208,
+          "hotelName": "Holiday Inn",
+          "roomType": "Delux",
+          "guest": 3,
+          "price": 31860,
+          "checkIn": "09/08/2023",
+          "checkOut": "12/08/2023"
+        },
+        {
+          "bookingId": 211,
+          "hotelName": "Alchemy Suites",
+          "roomType": "Non-A/C",
+          "guest": 2,
+          "price": 8850,
+          "checkIn": "12/08/2023",
+          "checkOut": "15/08/2023"
+        }
+      ]
+    }
+  ]
+}
